@@ -1,0 +1,17 @@
+{
+	"name": "Bread",
+	"cost": 30,
+	"usable": [
+		true,
+		true,
+		true,
+		true
+	],
+	"eatable": true,
+	"recover": 17,
+	"equipable": false,
+	"sellable": false,
+	"usable_once": false,
+	"second_use": "Crumbs",
+	"description": "OK to eat it, but its Crumbs can be used to mark your trail."
+}

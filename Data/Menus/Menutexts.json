@@ -1,0 +1,44 @@
+{
+	"actions":{
+		"talk": "Talk",
+		"check": "Check",
+		"goods": "Goods",
+		"psi": "PSI",
+		"map": "Map",
+		"stats": "Stats",
+		"bash": "Bash",
+		"guard": "Guard",
+		"flee": "Flee"
+	},
+	"stats":{
+		"cash": "Cash",
+		"dollarsign": "$",
+		"commands": "Commands",
+		"status": "Status",
+		"equipments": "Equipments",
+		"elodies": "Melodies",
+		"name": "Name",
+		"lvl": "Lvl",
+		"hp" : "HP",
+		"pp": "PP",
+		"offense": "Offense",
+		"defence": "Defence",
+		"speed": "Speed",
+		"iq": "IQ",
+		"guts": "Guts",
+		"exp": "Exp"
+	},
+	"options":{
+		"equip": "Equip",
+		"info": "Info",
+		"eat": "Eat",
+		"use": "Use",
+		"give": "Give",
+		"drop": "Drop"
+	},
+	"title":{
+		"start": "Start",
+		"options": "Options",
+		"soundtest": "Sound Test"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "TEST",
+	"hp": 50,
+	"pp": 0,
+	"level": 2,
+	"boss": false,
+	"exp": 1,
+	"cash": 1,
+	"attacks": {
+		"decompiling": 50,
+		"testing": 100
+        },
+	"boss": false,
+	"music": ""
+	"bg": ""
+}

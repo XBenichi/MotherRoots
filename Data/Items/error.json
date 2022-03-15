@@ -1,0 +1,17 @@
+{
+	"name": "Error",
+	"cost": 0,
+	"usable": [
+		false,
+		false,
+		false,
+		false
+	],
+	"eatable": false,
+	"recover": 0,
+	"equipable": false,
+	"sellable": false,
+	"usable_once": true,
+	"second_use": null,
+	"description": "wow lookie, error, report please"
+}
