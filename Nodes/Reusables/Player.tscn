@@ -4,8 +4,9 @@
 [ext_resource path="res://Scripts/Main/Player.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Main/Camera2D.gd" type="Script" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5.5, 4 )
+[sub_resource type="CapsuleShape2D" id=42]
+radius = 4.0
+height = 5.0
 
 [sub_resource type="Animation" id=2]
 length = 4.0
@@ -136,8 +137,8 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -145,15 +146,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 1, 0, 2, 0 ]
 }
 
 [sub_resource type="Animation" id=11]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -161,15 +162,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 41, 40, 42, 40 ]
 }
 
 [sub_resource type="Animation" id=12]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -177,15 +178,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 51, 50, 52, 50 ]
 }
 
 [sub_resource type="Animation" id=13]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -193,15 +194,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 11, 10, 12, 10 ]
 }
 
 [sub_resource type="Animation" id=14]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -209,15 +210,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 21, 20, 22, 20 ]
 }
 
 [sub_resource type="Animation" id=15]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -225,15 +226,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 31, 30, 32, 30 ]
 }
 
 [sub_resource type="Animation" id=16]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -241,15 +242,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 61, 60, 62, 60 ]
 }
 
 [sub_resource type="Animation" id=17]
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -257,7 +258,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 71, 70, 72, 70 ]
@@ -407,11 +408,12 @@ position = Vector2( 0, -4 )
 texture = ExtResource( 1 )
 hframes = 10
 vframes = 10
+frame = 71
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( -0.5, 5 )
-shape = SubResource( 1 )
+rotation = 1.5708
+shape = SubResource( 42 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Idle Down" = SubResource( 2 )

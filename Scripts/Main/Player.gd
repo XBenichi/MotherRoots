@@ -57,6 +57,7 @@ func _movement():
 		
 		if Input.is_action_pressed("ui_cancel"):
 			speed = 96
+			animationTree.advance(1 * get_physics_process_delta_time())
 			#animationTree.set("parameters/BlendTree/TimeScale/scale", 5.0)
 		else:
 			speed = 64

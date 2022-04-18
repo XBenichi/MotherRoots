@@ -97,14 +97,13 @@ blend_mode = 1
 states/Idle/node = SubResource( 9 )
 states/Idle/position = Vector2( 341, 122 )
 states/Walk/node = SubResource( 18 )
-states/Walk/position = Vector2( 528, 122 )
+states/Walk/position = Vector2( 528, 121.556 )
 transitions = [ "Idle", "Walk", SubResource( 19 ), "Walk", "Idle", SubResource( 20 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=22]
 
 [sub_resource type="Animation" id=23]
-resource_name = "Idle Down"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -121,7 +120,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=24]
-resource_name = "Idle DownLeft"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -138,7 +136,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=25]
-resource_name = "Idle DownRight"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -155,7 +152,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=26]
-resource_name = "Idle Left"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -172,7 +168,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=27]
-resource_name = "Idle Right"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -189,7 +184,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=28]
-resource_name = "Idle Up"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -206,7 +200,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=29]
-resource_name = "Idle UpLeft"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -223,7 +216,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=30]
-resource_name = "Idle UpRight"
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -240,9 +232,8 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=31]
-resource_name = "Move Down"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -250,16 +241,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 1, 0, 2, 0 ]
 }
 
 [sub_resource type="Animation" id=32]
-resource_name = "Move DownLeft"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -267,16 +257,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 41, 40, 42, 40 ]
 }
 
 [sub_resource type="Animation" id=33]
-resource_name = "Move DownRight"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -284,16 +273,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 51, 50, 52, 50 ]
 }
 
 [sub_resource type="Animation" id=34]
-resource_name = "Move Left"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -301,16 +289,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 11, 10, 12, 10 ]
 }
 
 [sub_resource type="Animation" id=35]
-resource_name = "Move Right"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -318,16 +305,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 21, 20, 22, 20 ]
 }
 
 [sub_resource type="Animation" id=36]
-resource_name = "Move Up"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -335,16 +321,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 31, 30, 32, 30 ]
 }
 
 [sub_resource type="Animation" id=37]
-resource_name = "Move UpLeft"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -352,16 +337,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 61, 60, 62, 60 ]
 }
 
 [sub_resource type="Animation" id=38]
-resource_name = "Move UpRight"
-length = 1.2
 loop = true
+step = 0.0833333
 tracks/0/type = "value"
 tracks/0/path = NodePath("main:frame")
 tracks/0/interp = 1
@@ -369,7 +353,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 71, 70, 72, 70 ]
@@ -392,14 +376,17 @@ position = Vector2( 0, -4 )
 texture = ExtResource( 1 )
 hframes = 10
 vframes = 10
+frame = 40
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 21 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource( 22 )
 parameters/Idle/blend_position = Vector2( -0.00810808, 0.810345 )
-parameters/Walk/blend_position = Vector2( 0.00270271, -0.0258621 )
+parameters/Walk/blend_position = Vector2( -0.28908, 0.627168 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Idle Down" = SubResource( 23 )
@@ -418,8 +405,5 @@ parameters/Walk/blend_position = Vector2( 0.00270271, -0.0258621 )
 "anims/Move Up" = SubResource( 36 )
 "anims/Move UpLeft" = SubResource( 37 )
 "anims/Move UpRight" = SubResource( 38 )
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
